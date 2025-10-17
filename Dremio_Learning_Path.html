@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dremio Learning Path Guidelines</title>
+</head>
+<body style="font-family:Arial, sans-serif; line-height:1.6;">
+
+<h1>Dremio Learning Path Guidelines</h1>
+
+<h2>Introduction</h2>
+<p>
+This document provides a structured learning journey for anyone adopting Dremio — from newcomers to advanced users optimizing large-scale analytics.<br>
+It is built around Dremio University courses, official documentation, and open-source GitHub resources.<br>
+The purpose is to help every learner — analyst, engineer, developer, product owner, or administrator — grow their Dremio expertise step by step,
+through both theoretical understanding and hands-on practice with real datasets.
+</p>
+
+<hr>
+
+<h2>User Personas</h2>
+
+<h3>Data Analyst</h3>
+<ul>
+  <li><strong>Goal:</strong> Explore data, build dashboards, and write performant SQL queries.</li>
+  <li><strong>Focus Areas:</strong>
+    <ul>
+      <li>Navigating Dremio’s user interface</li>
+      <li>Creating and querying Virtual Datasets (VDS)</li>
+      <li>Using reflections to improve dashboard speed</li>
+      <li>Understanding dataset lineage and semantic structure</li>
+    </ul>
+  </li>
+  <li><strong>Key Courses:</strong>
+    <ul>
+      <li><a href="https://university.dremio.com/course/dremio-fundamentals-software">Dremio Fundamentals (Software)</a></li>
+      <li><a href="https://university.dremio.com/course/sql-data-analysts">SQL Fundamentals for Data Analysts</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Data Engineer</h3>
+<ul>
+  <li><strong>Goal:</strong> Connect, transform, and optimize data sources.</li>
+  <li><strong>Focus Areas:</strong>
+    <ul>
+      <li>Setting up and managing data sources (Oracle, S3, etc.)</li>
+      <li>Understanding query pushdown and tuning performance</li>
+      <li>Designing and managing reflections</li>
+      <li>Integrating Apache Iceberg</li>
+    </ul>
+  </li>
+  <li><strong>Key Courses:</strong>
+    <ul>
+      <li><a href="https://university.dremio.com/course/dremio-fundamentals-software">Dremio Fundamentals (Software)</a></li>
+      <li><a href="https://university.dremio.com/course/reflection-fundamentals">Data Reflection Fundamentals</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Developer / Application Integrator</h3>
+<ul>
+  <li><strong>Goal:</strong> Build applications that leverage Dremio as a backend.</li>
+  <li><strong>Focus Areas:</strong>
+    <ul>
+      <li>Using REST / JDBC / ODBC APIs</li>
+      <li>Embedding Dremio SQL in application code</li>
+      <li>Automating metadata and lineage retrieval</li>
+      <li>Integrating with dashboards or pipelines</li>
+    </ul>
+  </li>
+  <li><strong>Key Courses / Resources:</strong>
+    <ul>
+      <li><a href="https://university.dremio.com/course/dremio-fundamentals-software">Dremio Fundamentals (Software)</a></li>
+      <li><a href="https://docs.dremio.com/current/reference/api/">Dremio REST API Reference</a></li>
+      <li><a href="https://www.dremio.com/blog/automating-dremio-dbt-with-github-actions/">Automating Dremio dbt Models with GitHub Actions</a></li>
+      <li><a href="https://github.com/dremio/dremio-oss">dremio/dremio-oss</a> — open-source core engine</li>
+      <li><a href="https://github.com/dremio/dremio-cloud-tools">dremio/dremio-cloud-tools</a> — scripts and utilities for deployment</li>
+      <li><a href="https://github.com/developer-advocacy-dremio/quick-guides-from-dremio">developer-advocacy-dremio/quick-guides-from-dremio</a> — quick guides and examples</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Data Product Owner / Architect</h3>
+<ul>
+  <li><strong>Goal:</strong> Govern, document, and standardize datasets as reusable products.</li>
+  <li><strong>Focus Areas:</strong>
+    <ul>
+      <li>Organizing the catalog and naming conventions</li>
+      <li>Managing privileges and governance</li>
+      <li>Documenting dataset ownership and usage</li>
+      <li>Building a semantic layer for discovery</li>
+    </ul>
+  </li>
+  <li><strong>Key Courses:</strong>
+    <ul>
+      <li><a href="https://university.dremio.com/course/data-product-fundamentals">Data Product Fundamentals</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Platform Administrator</h3>
+<ul>
+  <li><strong>Goal:</strong> Manage users, permissions, and overall Dremio performance.</li>
+  <li><strong>Focus Areas:</strong>
+    <ul>
+      <li>Environment setup and maintenance</li>
+      <li>Role-based access control</li>
+      <li>Resource queues and workload management</li>
+      <li>System monitoring, logs, and tuning</li>
+    </ul>
+  </li>
+  <li><strong>Key Courses:</strong>
+    <ul>
+      <li><a href="https://university.dremio.com/course/dremio-fundamentals-software">Dremio Fundamentals (Software)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr>
+
+<h2>Recommended Learning Path</h2>
+
+<table border="1" cellspacing="0" cellpadding="6">
+<thead><tr><th>Stage</th><th>Focus</th><th>Recommended Content</th><th>Key Outcomes</th></tr></thead>
+<tbody>
+<tr><td>1. Orientation</td><td>Understand Dremio’s architecture and purpose</td><td><a href="https://university.dremio.com/course/dremio-fundamentals-software">Dremio Fundamentals (Software)</a>, <a href="https://www.dremio.com/lakehouse-deep-dives/dremio-101/">Dremio 101 Deep Dive</a></td><td>Learn how Dremio fits in a data ecosystem</td></tr>
+<tr><td>2. Querying & Exploration</td><td>Build Virtual Datasets, query, and explore</td><td>Fundamentals + <a href="https://docs.dremio.com/tutorials/">Getting Started Tutorials</a></td><td>Confident SQL use and data exploration</td></tr>
+<tr><td>3. Performance Optimization</td><td>Reflections, pushdown, job profiling</td><td><a href="https://university.dremio.com/course/reflection-fundamentals">Data Reflection Fundamentals</a>, <a href="https://docs.dremio.com/current/sonar/reflections/best-practices/">Reflections Best Practices</a></td><td>Diagnose and tune slow queries</td></tr>
+<tr><td>4. Governance & Data Products</td><td>Structure and document datasets</td><td><a href="https://university.dremio.com/course/data-product-fundamentals">Data Product Fundamentals</a>, <a href="https://docs.dremio.com/current/help-support/best-practices/">Semantic Layer Docs</a></td><td>Apply consistent naming and ownership</td></tr>
+<tr><td>5. Advanced Engineering / Integration</td><td>APIs, Iceberg, automation</td><td><a href="https://university.dremio.com/course/apache-iceberg">Apache Iceberg Course</a>, <a href="https://docs.dremio.com/current/reference/api/">Dremio REST API Reference</a></td><td>Integrate Dremio with applications and pipelines</td></tr>
+<tr><td>6. Certification & Validation</td><td>Earn credentials</td><td><a href="https://university.dremio.com/credentials">Dremio University Credentials</a></td><td>Demonstrate verified skills</td></tr>
+</tbody></table>
+
+<hr>
+
+<h2>Usage Guidelines</h2>
+<ul>
+  <li>Combine theory and practice: perform live exercises after each module.</li>
+  <li>Work with real datasets to reinforce learning.</li>
+  <li>Always inspect <strong>Job Profiles</strong> to see what is pushed down vs processed internally.</li>
+  <li>Encourage peer reviews for queries, reflections, and dataset organization.</li>
+  <li>Use badges and credentials as progress milestones.</li>
+  <li>Maintain a shared “Dremio Playbook” of tips, reflection designs, and performance tricks.</li>
+  <li>Refer to open-source repositories for automation and deployment ideas.</li>
+</ul>
+
+<hr>
+
+<h2>References</h2>
+<ul>
+  <li><a href="https://docs.dremio.com/current/reference/api/">Dremio REST API Reference</a></li>
+  <li><a href="https://docs.dremio.com/current/">Official Dremio Documentation Portal</a></li>
+</ul>
+
+</body>
+</html>
